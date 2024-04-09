@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.header{
+  justify-content: center;
+}
+.header__top{
+  height: 40px;
+  position:relative;
+  width: 1200px;
+  justify-content:space-between;
+}
+.header__top-left{
+  position:relative;
+  display: flex;
+  align-items:center;
+  height: 40px;
+}
+.header__menu{
+  justify-content:center;
+}
+.button-search{
+  position: absolute;
+    display: flex;
+    left: 60px;
+}
+.sidebar {
+  bottom: -170px;
+}
