@@ -23,8 +23,11 @@ Follow these steps to set up your development environment:
 
 ```bash
 git clone https://github.com/yourusername/tengrinewsclone.git
+```
 cd tengrinewsclone
 Install the necessary packages:
+bash
+Copy code
 npm install
 Set up Firebase:
 Go to the Firebase Console and create a new project.
@@ -33,6 +36,8 @@ Add your app and get your Firebase config object.
 Configure environment variables:
 Create a .env file in the root of your project and add your Firebase configuration keys like so:
 
+plaintext
+Copy code
 REACT_APP_FIREBASE_API_KEY=your_api_key
 REACT_APP_FIREBASE_AUTH_DOMAIN=your_auth_domain
 REACT_APP_FIREBASE_DATABASE_URL=your_database_url
@@ -43,6 +48,8 @@ REACT_APP_FIREBASE_APP_ID=your_app_id
 Running the Project
 To start the application in development mode, run:
 
+bash
+Copy code
 npm start
 This will launch the project in your default web browser at http://localhost:3000.
 
@@ -61,5 +68,12 @@ Please refer to the CONTRIBUTING.md for more information.
 License
 Distributed under the MIT License. See LICENSE for more information.
 
+rust
+Copy code
 
 This README.md template provides a solid foundation for your project documentation, including installation instructions, built with, and contributing guidelines. Customize it further to match your project's specifics.
+
+
+
+
+
