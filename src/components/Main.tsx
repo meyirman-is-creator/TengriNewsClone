@@ -65,7 +65,7 @@ export default function Main() {
           console.log(json);
           setNews(json?.articles)
         });
-    } catch (err) {
+    }catch (err) {
       console.error(err);
     }
   };

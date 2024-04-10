@@ -175,10 +175,10 @@ export default function Navbar(props: menuProp) {
               Politics
             </h1>
             <h1
-              onClick={() => props?.setMenu("wrold")}
+              onClick={() => props?.setMenu("world")}
               className="ml-7 cursor-pointer"
             >
-              Wrold
+              World
             </h1>
           </div>
           <hr className="mt-2" />
