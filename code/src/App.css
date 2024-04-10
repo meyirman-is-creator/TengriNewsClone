@@ -1,29 +1,81 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.header{
+.header {
   justify-content: center;
 }
-.header__top{
+.header__top {
   height: 40px;
-  position:relative;
+  position: relative;
   width: 1200px;
-  justify-content:space-between;
+  justify-content: space-between;
 }
-.header__top-left{
-  position:relative;
+.header__top-left {
+  position: relative;
   display: flex;
-  align-items:center;
+  align-items: center;
   height: 40px;
 }
-.header__menu{
-  justify-content:center;
+.header__menu {
+  justify-content: center;
 }
-.button-search{
+.button-search {
   position: absolute;
-    display: flex;
-    left: 60px;
+  display: flex;
+  left: 60px;
 }
 .sidebar {
   bottom: -170px;
+}
+.pagination {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+.pagination-btns {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-btns button {
+  width: 40px;
+  height: 40px;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 0 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: transparent;
+  border: 2px solid black;
+}
+
+.pagination-btns button.active {
+  font-weight: 700;
+  border-color: #101010;
+  background: gray;
+  color: white;
+} 
+.btn-sort {
+  padding: 5px;
+  border:2px solid black;
+  font-weight: 600;
+
+}
+.btn-sort.active{
+  border-color: #101010;
+  background: gray;
+  color: white;
+}
+.swiper-sliders-class{
+  width: 630px;
+}
+.sidebar_container{
+  margin-right: 15px;
+}
+.goToBack{
+  padding: 5px;
+  border: 1px solid black;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background: green;
 }

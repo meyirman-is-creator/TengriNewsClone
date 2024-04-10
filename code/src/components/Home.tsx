@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import noPhoto from '../assets/bg.webp';
 interface newsProp {
   news: any;
   num: any;
@@ -20,7 +21,7 @@ export default function Home(props: newsProp) {
           </div>
           <img
             className="w-8/12 h-96 ml-7"
-            src={props?.news[`${props.num}`]?.urlToImage}
+            src={props?.news[`${props.num}`]?.urlToImage===''?noPhoto:props?.news[`${props.num}`]?.urlToImage}
             alt=""
           />
         </div>

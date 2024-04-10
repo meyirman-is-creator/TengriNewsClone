@@ -2,12 +2,12 @@ import { initializeApp } from "firebase/app";
 import {getAuth, GoogleAuthProvider, GithubAuthProvider} from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAFGepOADpL2gbvyfm7hhuQpLtWHfljzMQ",
-  authDomain: "newyorktimes-2566e.firebaseapp.com",
-  projectId: "newyorktimes-2566e",
-  storageBucket: "newyorktimes-2566e.appspot.com",
-  messagingSenderId: "48351580471",
-  appId: "1:48351580471:web:62afe8af946f501a0f8ab2"
+  apiKey: "AIzaSyCa6AHAZLRib7IejqaIHK3m2_kJBiiG8QE",
+  authDomain: "tengrinews.firebaseapp.com",
+  projectId: "tengrinews",
+  storageBucket: "tengrinews.appspot.com",
+  messagingSenderId: "298436898790",
+  appId: "1:298436898790:web:fd8fcdf9dafad3091ff027"
 };
 
 const app = initializeApp(firebaseConfig);
