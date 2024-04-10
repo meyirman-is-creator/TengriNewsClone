@@ -11,37 +11,37 @@ export default function Footer(props:menuProp) {
         <hr className="mt-1" />
         <img src={newyork} alt="" className="w-52 mt-3" />
         <div className="flex items-center justify-between p-4">
-          <div>
+        <div>
             <h1 className="font-bold text-sm">NEWS</h1>
-            <h1 className="cursor-pointer" >Home Page</h1>
-            <h1 className="cursor-pointer" >World</h1>
-            <h1 className="cursor-pointer" >Coronavirus</h1>
-            <h1 className="cursor-pointer" >U.S.World</h1>
-            <h1 className="cursor-pointer" >U.S.Politics</h1>
+            <h1 className="cursor-pointer" onClick={()=>props?.setMenu("home")}>Home Page</h1>
+            <h1 className="cursor-pointer" onClick={()=>props?.setMenu("world")}>World</h1>
+            <h1 className="cursor-pointer" onClick={()=>props?.setMenu("coronavirus")}>Coronavirus</h1>
+            <h1 className="cursor-pointer" onClick={()=>props?.setMenu("us")}>U.S.World</h1>
+            <h1 className="cursor-pointer" onClick={()=>props?.setMenu("politics")}>U.S.Politics</h1>
           </div>
           <div>
             <h1 className="font-bold text-sm">OPINION</h1>
-            <h1 className="cursor-pointer" >Today's Opinion</h1>
-            <h1 className="cursor-pointer" >Editorials</h1>
-            <h1 className="cursor-pointer" >Opinion video</h1>
-            <h1 className="cursor-pointer" >Letters</h1>
-            <h1 className="cursor-pointer" >Columnists</h1>
+            <h1 className="cursor-pointer" onClick={()=>props?.setMenu("opinion")}>Today's Opinion</h1>
+            <h1 className="cursor-pointer" onClick={()=>props?.setMenu("editorials")}>Editorials</h1>
+            <h1 className="cursor-pointer" onClick={()=>props?.setMenu("video")}>Opinion video</h1>
+            <h1 className="cursor-pointer" onClick={()=>props?.setMenu("letters")}>Letters</h1>
+            <h1 className="cursor-pointer" onClick={()=>props?.setMenu("columnists")}>Columnists</h1>
           </div>
           <div>
             <h1 className="font-bold text-sm">ARTS</h1>
-            <h1 className="cursor-pointer" >Movies</h1>
-            <h1 className="cursor-pointer" >Books</h1>
-            <h1 className="cursor-pointer" >Video</h1>
-            <h1 className="cursor-pointer" >Music</h1>
-            <h1 className="cursor-pointer" >Dance</h1>
+            <h1 className="cursor-pointer" onClick={()=>props?.setMenu("Movies")}>Movies</h1>
+            <h1 className="cursor-pointer" onClick={()=>props?.setMenu("Books")}>Books</h1>
+            <h1 className="cursor-pointer" onClick={()=>props?.setMenu("Video")}>Video</h1>
+            <h1 className="cursor-pointer" onClick={()=>props?.setMenu("Music")}>Music</h1>
+            <h1 className="cursor-pointer" onClick={()=>props?.setMenu("Dance")}>Dance</h1>
           </div>
           <div>
             <h1 className="font-bold text-sm">LIVING</h1>
-            <h1 className="cursor-pointer" >Food</h1>
-            <h1 className="cursor-pointer" >Health</h1>
-            <h1 className="cursor-pointer" >Travel</h1>
-            <h1 className="cursor-pointer" >Love</h1>
-            <h1 className="cursor-pointer" >Job</h1>
+            <h1 className="cursor-pointer" onClick={()=>props?.setMenu("Food")}>Food</h1>
+            <h1 className="cursor-pointer" onClick={()=>props?.setMenu("Health")}>Health</h1>
+            <h1 className="cursor-pointer" onClick={()=>props?.setMenu("Travel")}>Travel</h1>
+            <h1 className="cursor-pointer" onClick={()=>props?.setMenu("Love")}>Love</h1>
+            <h1 className="cursor-pointer" onClick={()=>props?.setMenu("Job")}>Job</h1>
           </div>
           <div>
             <h1 className="font-bold text-sm">MORE</h1>

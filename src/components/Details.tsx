@@ -1,13 +1,14 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { useLocation } from "react-router-dom";
 import moment from "moment";
 import newyork from "../img/tengrinews.svg";
 import Footer from "./Footer";
 import { useNavigate } from "react-router-dom";
-import noPhoto from '../assets/bg.webp';
+import noPhoto from "../assets/bg.webp";
 export default function Details() {
-  const location = useLocation();
   const navigate = useNavigate();
+
+  const location = useLocation();
   return (
     <>
       <div className="p-4 shadow-lg">
@@ -45,8 +46,12 @@ export default function Details() {
 
         <img
           className="mt-5"
-          style={{width:'1000px'}}
-          src={location?.state?.data?.urlToImage===''?noPhoto:location?.state?.data?.urlToImage}
+          style={{ width: "1000px" }}
+          src={
+            location?.state?.data?.urlToImage === ""
+              ? noPhoto
+              : location?.state?.data?.urlToImage
+          }
         />
         <div className="flex items-center font-bold mt-4">
           <h1>

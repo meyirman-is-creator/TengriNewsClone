@@ -11,10 +11,9 @@ import politics from "../data/politics.json";
 import world from "../data/world.json";
 import Footer from "./Footer";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css/pagination";
 import "swiper/css";
-
 
 interface NewsArticle {
   source: {
@@ -58,14 +57,16 @@ export default function Main() {
   const getNews = async () => {
     try {
       await fetch(
-        `https://newsapi.org/v2/everything?q=${menu?menu:'politics'}&apiKey=20e4c41c4d904ff49f10485c8aafa3b2`
+        `https://newsapi.org/v2/everything?q=${
+          menu ? menu : "politics"
+        }&apiKey=20e4c41c4d904ff49f10485c8aafa3b2`
       )
         .then((res) => res.json())
         .then((json) => {
           console.log(json);
-          setNews(json?.articles)
+          setNews(json?.articles);
         });
-    }catch (err) {
+    } catch (err) {
       console.error(err);
     }
   };
@@ -81,7 +82,6 @@ export default function Main() {
         <Swiper
           modules={[Pagination, Navigation]}
           pagination={true}
-
           navigation={true}
           spaceBetween={50}
           slidesPerView={1}
