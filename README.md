@@ -174,3 +174,21 @@ This configuration directs all requests to the index.html file, allowing React R
 - We initially utilized NewsAPI, which works perfectly for local development since it allows free access from localhost. However, when the site was deployed to Firebase Hosting, NewsAPI's free tier did not support calls from production websites.
 - To overcome this limitation without moving to a paid plan, we downloaded all necessary data in a JSON format and served this static data from the data folder. This way, the local development environment continues to fetch data directly from the NewsAPI backend, while the Firebase hosted version uses the static JSON files.
 - Rest assured, when you perform a git clone of the repository, the codebase you receive is configured to fetch data from the backend during development. For the production build hosted on Firebase, it retrieves data from the static JSON files included within the project.
+
+## Post-deadline Changes
+
+<span style="color:red">**Changes added to README.md on 15.04.24**</span>
+
+Here we document the changes that were made to the project after the original deadline.
+
+### Title Change in `index.html`
+
+- The title of the app in `public/index.html` was changed from "React App" to "TengriNews".
+
+### Updates in `Details.tsx`
+
+- - In `src/components/Details.tsx`, an import statement for a placeholder image `no Photo` was added.
+- - The `axe Effect` import was modified to be a named import from React.
+- - The image rendering logic was updated to use `no Photo` as a fallback when `urlToImage` is empty.
+
+**Note:** These changes were made to enhance the user experience and were not part of the initial project scope completed by the deadline.
